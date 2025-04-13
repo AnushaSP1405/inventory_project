@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <ol>
+        {% for product in products %}
+            <li>{{ product.name }} ({{ product.category.name }}) - Quantity: {{ product.quantity }} - Price: {{ product.price }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
